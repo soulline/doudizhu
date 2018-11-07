@@ -186,6 +186,7 @@ func ParseCardsType(cards []string, cardShow *model.CardShow) {
 			cardShow.CardTypeStatus = enum.SINGLE_ALONE
 			fmt.Printf("%d顺子", len(mapCard))
 		} else {
+			cardShow.CardTypeStatus = enum.ERROR_TYPE
 			fmt.Println("非法顺子")
 		}
 		break
